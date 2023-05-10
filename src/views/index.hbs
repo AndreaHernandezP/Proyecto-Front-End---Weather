@@ -2,19 +2,40 @@
 <html>
     <head>
         
-        
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>{{title}}</h1>
-        <p>Created by {{name}}</p>
-        <form>
-            <input placeholder="Location">
-            <button id="button">Search</button>
-            <input id="button2" type="button">Search2</button>
-            <input id="button3" type="submit">Search3</button>
-            <h2 id = "h2">valor</h2>
-        </form>
-        
+        <div id="contenedorGeneral">
+            <img id="nubesAnimacion" src="Nubes_animacion.svg">
+            <img id="Logo" src="Weather_Logo.svg">
+            <h2>Global weather information</h2>
+            <form>
+                <input placeholder="Please insert location">
+                <br>
+                <button id="button"><h6>Search</h6></button>
+            </form>
+            
+            <div id="template">
+                <span id="City">
+                    <h2>City</h2> 
+                    <img src="Weather_Logo.svg">
+                </span>
+                
+                <div id="contenedorDatosClima">
+                    <div id="encabezadoDatosClima">
+                        <h3>Temperature</h3>
+                        <h3>Wind Speed</h3>
+                        <h3>Humidity</h3>
+                    </div>
+                    <div id="datosClima">
+                        <h4>17 °C</h4>
+                        <h4>5 km/h</h4>
+                        <h4>100%</h4>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
     </body>
         <script src="Front.js"></script>
 </html>

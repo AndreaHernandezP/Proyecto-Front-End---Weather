@@ -1,0 +1,159 @@
+body{
+    background: linear-gradient(50deg, #29ABE2, #2e3192);
+    background-attachment:fixed; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+#contenedorGeneral{
+    background-color: white;
+    border-radius: 50px;
+    max-width: 45%;
+    min-width: 550px;
+    padding: 0 0 calc(0.8vw + 5vh) 0;
+    margin: 20px;
+    text-align:center;
+    flex-basis: 100%;  
+    position: relative;
+}
+
+#nubesAnimacion{
+    position: absolute;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    opacity: 20%;
+    animation: 3s linear 1s infinite running slidein;
+    left:0; /*En relación al Padre*/
+/*Referencia: https://stackoverflow.com/questions/25982135/why-does-left-50-transform-translatex-50-horizontally-center-an-element*/ 
+}
+
+@keyframes slidein{
+    0% {
+        transform: translateX(0%);
+        opacity: 0%;
+    }
+    68%,
+    72% {
+        opacity: 15%;
+        
+    }
+    100% {
+        transform: translateX(100%); /*En relación al porcentaje del objeto/child, Si mide 50%, se moverá su misma distancia con 100%*/
+        opacity: 0%;
+        right: 0;
+    }
+}
+
+
+#Logo{
+    width: calc(100% - 100px);
+}
+
+h2{
+    font-family: sans-serif;
+    font-size: 3vh;
+    color: #004C8B;
+    padding: 35px;
+    margin: 0px;
+    font-weight: 100;
+}
+
+form{
+    padding: 0;
+    margin: 0;
+}
+
+input{
+    margin: 0 0 0px 0;
+    /*text-align: center;*/
+    padding: 4px;
+}
+
+#button{
+    background: linear-gradient(to right, #29ABE2, #4AD9F5);
+    border-radius: 12px;
+    border-style: none;
+    padding: 5px 20px;
+    margin: 15px;
+}
+
+#button:hover{
+    background: linear-gradient(to right, #2E3192, #29ABE2);
+}
+
+h6{
+    color: white;
+    margin: 0;
+    font-size: 2.6vh;
+    font-weight: 100;
+}
+
+#template{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#City{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /*justify-content: center;*/
+    padding: 0 0 0 0;
+    margin: 0;
+}
+
+#contenedorDatosClima{
+    background-color: #F0F9FE;
+    border-radius: 30px;
+    
+    width: 70%;
+    
+}
+
+#encabezadoDatosClima{
+    background: linear-gradient(to right, #29ABE2, #A6DCF5);
+    border-radius: 11px;
+    
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content:space-around;
+    
+    padding: 10px 0px;
+    margin: 0;
+    
+    width: 100%;
+
+}
+
+h3{
+    color: white;
+    font-family: sans-serif;
+    font-weight: 100;
+    padding: 0;
+    margin: 0;
+}
+
+#datosClima{
+    display: flex;
+    flex-direction: row;
+    align-content:flex-end;
+    justify-content:space-around;
+    
+    padding: 10px 0px;
+    margin: 10px 0;
+}
+
+h4{
+    font-family: sans-serif;
+    font-size: 2.5vh;
+    color: #004C8B;
+    font-weight: 100;
+    padding: 0;
+    margin: 0;
+}
+
