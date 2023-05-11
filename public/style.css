@@ -56,9 +56,16 @@ h2{
     font-family: sans-serif;
     font-size: 3vh;
     color: #004C8B;
-    padding: 35px;
+    padding: 35px 0;
     margin: 0px;
     font-weight: 100;
+}
+
+h5{
+    margin: -10px 0 10px 0;
+    padding: 0 0 0 0;
+    color:crimson;
+    font-family: sans-serif;
 }
 
 form{
@@ -78,17 +85,14 @@ input{
     border-style: none;
     padding: 5px 20px;
     margin: 15px;
+    
+    color: white;
+    font-size: 2.6vh;
+    font-weight: 100;
 }
 
 #button:hover{
     background: linear-gradient(to right, #2E3192, #29ABE2);
-}
-
-h6{
-    color: white;
-    margin: 0;
-    font-size: 2.6vh;
-    font-weight: 100;
 }
 
 #template{
@@ -101,9 +105,30 @@ h6{
     display: flex;
     flex-direction: row;
     align-items: center;
-    /*justify-content: center;*/
+    justify-content:center;
+    flex-wrap: nowrap;
     padding: 0 0 0 0;
     margin: 0;
+    max-width: 60%;
+    
+}
+
+#ciudadBuscada{
+    flex-basis: content;
+    
+    
+}
+
+#iconoClima{
+    height: 5vh;
+    padding: 10px;
+    
+    
+}
+
+#iconoClima2{
+    height: 2.5vh;
+    padding: 0px 0 0 0;    
 }
 
 #contenedorDatosClima{
@@ -111,7 +136,6 @@ h6{
     border-radius: 30px;
     
     width: 70%;
-    
 }
 
 #encabezadoDatosClima{

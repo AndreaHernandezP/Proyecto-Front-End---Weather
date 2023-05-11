@@ -9,16 +9,20 @@
             <img id="nubesAnimacion" src="Nubes_animacion.svg">
             <img id="Logo" src="Weather_Logo.svg">
             <h2>Global weather information</h2>
+            <template id="templateError">
+                <h5 id="mensajeError">Lo sentimos, ha ocurrido un error.</h5>
+            </template>
             <form>
                 <input placeholder="Please insert location">
                 <br>
-                <button id="button"><h6>Search</h6></button>
+                <input id="button" type="button" value="Search"></input>
             </form>
+            
             
             <div id="template">
                 <span id="City">
-                    <h2>City</h2> 
-                    <img src="Weather_Logo.svg">
+                    <h2 id="ciudadBuscada"> New York, United states of america <img id="iconoClima2" src="Icono_clima.svg"> </h2> 
+                    <img id="iconoClima" src="Icono_clima.svg">
                 </span>
                 
                 <div id="contenedorDatosClima">
@@ -28,13 +32,13 @@
                         <h3>Humidity</h3>
                     </div>
                     <div id="datosClima">
-                        <h4>17 °C</h4>
-                        <h4>5 km/h</h4>
-                        <h4>100%</h4>
+                        <h4 id="temperature">17 °C</h4>
+                        <h4 id="windSpeed">5 km/h</h4>
+                        <h4 id="humidity">100%</h4>
                     </div>
                 </div>
-                
             </div>
+            
         </div>
     </body>
         <script src="Front.js"></script>
