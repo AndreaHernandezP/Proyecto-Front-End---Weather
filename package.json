@@ -1,0 +1,17 @@
+{
+	"name": "weather-application",
+	"description": "Global weather information",
+	"scripts": {
+		"start": "node src/app.js"
+	},
+	"dependencias": {
+		"express": "^5.0.0"
+	},
+	"author": "Andrea Hernandez",
+	"dependencies": {
+		"express": "^4.18.2",
+		"fetch": "^1.1.0",
+		"hbs": "^4.0.1",
+		"yargs": "^17.2.1"
+	}
+}
