@@ -1,3 +1,20 @@
+
+  @font-face {
+    font-family: 'Glametrix-light';     
+    src: url("GlametrixLight-0zjo.otf");
+  }
+
+  @font-face {
+    font-family: 'Sunflower';
+    src: url("SunflowerHighway-mrzv.otf");
+  }
+
+  @font-face {
+    font-family: 'Vegur';
+    src: url("Vegur-Yg1a.otf");
+  }
+
+
 body{
     background: linear-gradient(50deg, #29ABE2, #2e3192);
     background-attachment:fixed; 
@@ -53,31 +70,50 @@ body{
 }
 
 h2{
-    font-family: sans-serif;
-    font-size: 3vh;
+    font-family: 'Glametrix-light';
+    font-size: 4.5vh;
     color: #004C8B;
     padding: 35px 0;
     margin: 0px;
-    font-weight: 100;
+    font-weight:400;
 }
 
 h5{
-    margin: -10px 0 10px 0;
+    margin: -27px 0 12px 0;
     padding: 0 0 0 0;
     color:crimson;
     font-family: sans-serif;
 }
 
 form{
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: -8px;
 }
 
 input{
     margin: 0 0 0px 0;
     /*text-align: center;*/
     padding: 4px;
+    border: 1px solid #004C8B;
+    border-radius: 4px;
+    
 }
+
+  input:focus {
+    border: 1px solid transparent;
+    outline-style:inset;
+    outline-color: #29ABE2;
+    outline-width: 1px;
+    
+  } 
+
+  /* input:focus {
+    border-width: 10px;
+    outline-style:none;
+    border-image: radial-gradient(circle, rgba(9,9,121,1) 0%, rgba(0,212,255,0.700717787114846) 48%, rgba(255,255,255,1) 100%);
+    border-image-slice: 1;
+    
+  }  */
 
 #button{
     background: linear-gradient(to right, #29ABE2, #4AD9F5);
@@ -173,8 +209,8 @@ h3{
 }
 
 h4{
-    font-family: sans-serif;
-    font-size: 2.5vh;
+    font-family:'Glametrix-light';;
+    font-size: 3.8vh;
     color: #004C8B;
     font-weight: 100;
     padding: 0;
